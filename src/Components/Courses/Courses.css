@@ -1,0 +1,27 @@
+.courses-header {
+  font-size: 48px;
+}
+
+.courses-chips {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.courses-list {
+  list-style: none;
+}
+
+.courses-list-item {
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(51,51,51, 0.4);
+}
+
+.courses-list-item h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+}
