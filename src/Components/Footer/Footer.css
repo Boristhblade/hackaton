@@ -24,9 +24,27 @@
   display: flex;
   justify-content: space-between;
   gap: 0;
+  border: 1px solid #F2F2F2;
 }
 
-.footer-form-container input {
-  flex-grow: 1;
+.footer-form-input:focus {
+  background: #282828;
+}
+
+.footer-form-input {
+  background: #282828;
+  width: 100% - 200px;
+  border: none;
+  border-radius: 0;
+  flex-grow: 3;
   padding: 17px 20px;
+}
+
+.footer-form-submit {
+  border-radius: 0;
+  max-width: 200px;
+  padding: 17px 20px;
+  background: #F2F2F2;
+  color: #333333;
+  border: none;
 }

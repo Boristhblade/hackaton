@@ -1,4 +1,4 @@
-.btn {
+.button {
   padding: 10px 30px;
   border: 1px solid #333333;
   border-radius: 4px;
@@ -7,7 +7,7 @@
   transition: all 0.5s ease;
 }
 
-.btn:hover {
+.button:hover {
   box-shadow: 8px 10px #EB5757;
   transition: all 0.5s ease;
 }

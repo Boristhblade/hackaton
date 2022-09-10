@@ -1,6 +1,6 @@
 import './Footer.css';
 import React from 'react';
-import { Form } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 import { useFormik } from 'formik';
 
 export function Footer() {
@@ -16,15 +16,21 @@ export function Footer() {
     <div className='footer'>
       <Form className='footer-form'>
         <h3 className='footer-header'>Падпішыцеся на нашы навіны</h3>
-        <Form.Group className="form-floating" controlId="email">
-          <Form.Control 
-            placeholder='Увядзіце ваш еmail'
-            type='email'
-            value={formik.values.email}
-            onChange={formik.handleChange}
-          />
-          <Form.Label className='form-label'>Увядзіце ваш еmail</Form.Label>
-        </Form.Group>
+        <div className='footer-form-container'>
+          <Form.Group className="form-floating" controlId="email">
+            <Form.Control
+              className='footer-form-input'
+              placeholder='Увядзіце ваш еmail'
+              type='email'
+              value={formik.values.email}
+              onChange={formik.handleChange}
+            />
+            <Form.Label className='form-label'>Увядзіце ваш еmail</Form.Label>
+          </Form.Group>
+          <Button className='footer-form-submit' variant="outline-primary" type="submit">
+            Падпісацца
+          </Button>
+        </div>
       </Form>
       {/* <form className='footer-form'>
         
