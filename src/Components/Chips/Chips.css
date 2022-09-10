@@ -9,4 +9,5 @@
 .chips:hover {
   border: 1px solid #EB5757;
   color: #EB5757;
+  transition: all 0.5s ease;
 }
