@@ -1,3 +1,4 @@
+import { Button } from '../Button';
 import { NewsCard } from '../NewsCard';
 import './News.css';
 
@@ -12,6 +13,11 @@ export function News() {
         <NewsCard />
         <NewsCard />
         <NewsCard />
+      </div>
+      <div className='news-btn'>
+        <Button>
+          Хачу яшчэ навiн
+        </Button>
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import './App.css';
 import { About } from './Components/About';
+import { BestPracticies } from './Components/BestPracticies';
 import { Courses } from './Components/Courses';
 import { Header } from './Components/Header';
 import { News } from './Components/News';
@@ -11,6 +12,7 @@ function App() {
       <About />
       <Courses />
       <News />
+      <BestPracticies />
     </div>
   );
 }

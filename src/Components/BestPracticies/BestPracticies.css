@@ -1,0 +1,15 @@
+.bestpracticies {
+
+}
+
+.bestpracticies-container {
+  display: flex;
+  gap: 20px;
+}
+
+.bestpracticies-header {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: #333333;
+}

@@ -13,4 +13,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 387px);
   gap: 19px;
+  margin-bottom: 30px;
+}
+
+.news-btn {
+  display: flex;
+  justify-content: center;
 }
