@@ -5,7 +5,7 @@
   min-height: 467px;
   border-radius: 8px;
   padding: 20px;
-  border: 1px solid #333333;
+  border: 1px solid rgba(55, 55, 55, 0.4);
 }
 
 .newscard-image {

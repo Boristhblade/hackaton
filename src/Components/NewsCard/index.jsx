@@ -3,7 +3,7 @@ import './NewsCard.css';
 export function NewsCard() {
   return (
     <div className='newscard'>
-      <img src='./img/Rectangle 71.png' className='newscard-image' alt='newscard image' />
+      <img src='./img/Rectangle 71.png' className='newscard-image' alt='newscard' />
       <div className='newscard-description'>
         Дызайн
       </div>

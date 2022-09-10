@@ -1,0 +1,16 @@
+.news {
+
+}
+
+.news-header {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: #333333;
+}
+
+.newscard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 387px);
+  gap: 19px;
+}

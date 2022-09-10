@@ -2,7 +2,7 @@ import './App.css';
 import { About } from './Components/About';
 import { Courses } from './Components/Courses';
 import { Header } from './Components/Header';
-import { NewsCard } from './Components/NewsCard';
+import { News } from './Components/News';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <About />
       <Courses />
-      <NewsCard />
+      <News />
     </div>
   );
 }
