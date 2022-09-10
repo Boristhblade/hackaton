@@ -19,7 +19,6 @@ export function Courses() {
           {courses.map((text, index) => (
             <li className='courses-list-item' key={index}>
               <h3>{text}</h3>
-              <img src='./img/plus.png' alt='open'/>
             </li>
           ))}
       </ul>

@@ -23,6 +23,8 @@
 .header-links a {
   display: block;
   padding: 5px 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .header-auth {
@@ -36,4 +38,6 @@
   width: 100px;
   height: 20px;
   padding: 5px 10px;
+  text-decoration: none;
+  color: black;
 }

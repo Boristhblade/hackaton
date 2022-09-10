@@ -1,0 +1,27 @@
+.logo {
+  position: relative;
+  height: 800px;
+}
+
+.logo-img {
+  position: absolute;
+  top: -130px;
+  left: -50px;
+  z-index: -1;
+}
+
+.logo-text {
+  position: absolute;
+  top: 180px;
+  left: 100px;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 116px;
+  color: #F2F2F2;
+}
+
+.logo .button {
+  position: absolute;
+  top: 230px;
+  left: 600px;
+}

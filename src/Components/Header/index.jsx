@@ -6,7 +6,7 @@ export function Header() {
   return (
     <div className="header">
       <div className="header-logo">
-        Kropka
+        MARAMORA.
       </div>
       <nav className="header-links">
         <a href="#">Навiны</a>

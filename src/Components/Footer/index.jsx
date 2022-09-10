@@ -32,13 +32,6 @@ export function Footer() {
           </Button>
         </div>
       </Form>
-      {/* <form className='footer-form'>
-        
-        <div className='footer-form-container'>
-          <input type='email' id='email' placeholder='Увядзіце ваш еmail'/>
-          <input type='submit' value='Падпісацца'/>
-        </div>
-      </form> */}
       <div className='footer-contacts'>
         <h3 className='footer-header'>Кантакты</h3>
         <p>hello@kropka.pro</p>
@@ -50,7 +43,15 @@ export function Footer() {
         </div>
       </div>
       <footer className='footer-links'>
-
+        <nav className="footer-links-list">
+          <a href="#">Навiны</a>
+          <a href="#">Курсы</a>
+          <a href="#">Best practices</a>
+          <a href="#">Суполкi</a>
+          <a href="#">Лiчны кабiнет</a>
+          <a href="#">Рэгiстрацыя</a>
+        </nav>
+        <p>Made by Kropka</p>
       </footer>
     </div>
   )

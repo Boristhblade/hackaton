@@ -1,25 +1,20 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { About } from './Components/About';
-import { BestPracticies } from './Components/BestPracticies';
-import { Courses } from './Components/Courses';
-import { Footer } from './Components/Footer';
-import { Header } from './Components/Header';
-import { News } from './Components/News';
+import {
+  BrowserRouter as Router, Routes, Route,
+} from 'react-router-dom';
+import { Main } from './Pages/Main';
+import { Registration } from './Pages/Registration';
 
 function App() {
   return (
-    <>
-      <div className="container">
-        <Header />
-        <About />
-        <Courses />
-        <News />
-        <BestPracticies />
-      </div>
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path='/' element={<Main />} />
+        <Route exact path='/registration' element={<Registration />} />
+      </Routes>
+    </Router>
   );
 }
 

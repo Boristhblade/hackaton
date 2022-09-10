@@ -1,5 +1,5 @@
 .bestpracticies {
-
+  margin-top: 200px;
 }
 
 .bestpracticies-container {
@@ -12,4 +12,5 @@
   font-size: 48px;
   line-height: 58px;
   color: #333333;
+  margin-bottom: 40px;
 }
