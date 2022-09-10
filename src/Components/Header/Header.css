@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+  height: 100px;
+}
+
+.header-logo {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 55px;
+  max-width: 600px;
+}
+
+.header-links a {
+  display: block;
+  padding: 5px 10px;
+}
+
+.header-auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-auth-reg {
+  display: block;
+  width: 100px;
+  height: 20px;
+  padding: 5px 10px;
+}

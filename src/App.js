@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import { Button } from './Components/Button';
+import { Header } from './Components/Header';
 
 function App() {
   return (
-    <Button />
+    <div className="container">
+      <Header />
+    </div>
   );
 }
 
