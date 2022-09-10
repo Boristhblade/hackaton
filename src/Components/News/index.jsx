@@ -1,6 +1,7 @@
 import { Button } from '../Button';
 import { NewsCard } from '../NewsCard';
 import './News.css';
+import React from 'react';
 
 export function News() {
   return (

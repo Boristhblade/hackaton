@@ -1,5 +1,6 @@
 import { Chips } from '../Chips';
 import './BestPracticies.css';
+import React from 'react';
 
 export function BestPracticies() {
   const temp = ['Bобласць', 'Bобласць', 'Bобласць', 'Bобласць', 'Bобласць'];
@@ -8,7 +9,7 @@ export function BestPracticies() {
       <h2 className='bestpracticies-header'>Best practices.</h2>
       <div className='bestpracticies-container'>
         {temp.map((text, index) => (
-          <Chips>
+          <Chips key={index}>
             {text}
           </Chips>
         ))}

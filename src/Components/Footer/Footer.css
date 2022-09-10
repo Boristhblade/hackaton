@@ -1,0 +1,32 @@
+.footer {
+  margin-top: 200px;
+  padding: 100px 200px 50px 200px;
+  background-color: #282828;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 130px;
+  row-gap: 90px;
+  color: #F2F2F2;
+}
+
+.footer-links {
+  border-top: 1px solid #909090;
+  grid-column: span 2;
+}
+
+.footer-header {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.footer-form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.footer-form-container input {
+  flex-grow: 1;
+  padding: 17px 20px;
+}

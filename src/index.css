@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Inter', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
@@ -25,10 +23,10 @@ p {
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('../public/fonts/Quicksand/Quicksand-VariableFont_wght.ttf');
+  src: url('./fonts/Quicksand/Quicksand-VariableFont_wght.ttf');
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('../public/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+  src: url('./fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
 }

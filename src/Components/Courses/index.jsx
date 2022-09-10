@@ -1,5 +1,6 @@
 import './Courses.css';
 import { Chips } from '../Chips';
+import React from 'react';
 
 export function Courses() {
   const chipsTexts = ['Графiчны дызайн', 'Motion дызайн', 'UX/UI дызайн', 'Фатаграфiя', 'I яшчэ'];
@@ -16,7 +17,7 @@ export function Courses() {
       </div>
       <ul className='courses-list'>
           {courses.map((text, index) => (
-            <li className='courses-list-item'>
+            <li className='courses-list-item' key={index}>
               <h3>{text}</h3>
               <img src='./img/plus.png' alt='open'/>
             </li>

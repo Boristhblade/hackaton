@@ -1,4 +1,5 @@
 import './NewsCard.css';
+import React from 'react';
 
 export function NewsCard() {
   return (
