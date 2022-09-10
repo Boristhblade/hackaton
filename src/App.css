@@ -5,17 +5,3 @@
 .container {
   margin: 0 200px;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
-
-@font-face {
-  font-family: 'Quicksand';
-  src: url('../public/fonts/Quicksand/Quicksand-VariableFont_wght.ttf');
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../public/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
-}

@@ -1,10 +1,10 @@
 import React from "react";
 import './Button.css';
 
-export function Button() {
+export function Button({ children }) {
   return (
     <button className="btn">
-      Хачу яшчэ навiн
+      {children}
     </button>
   )
 }

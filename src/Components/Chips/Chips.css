@@ -1,0 +1,12 @@
+.chips {
+  padding: 10px 30px;
+  background-color: #F1F0F0;
+  border: 1px solid #333333;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.chips:hover {
+  border: 1px solid #EB5757;
+  color: #EB5757;
+}

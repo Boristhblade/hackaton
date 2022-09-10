@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+}
+
+.about-text {
+  width: 590px;
+}
+
+.about-text-main {
+  margin-top: 0;
+  font-size: 32px;
+  line-height: 38.4px;
+}
+
+.about-text-secondary {
+  font-size: 18px;
+  line-height: 23.4px;
+  margin-bottom: 0;
+}
+
+.about-numbers {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  gap: 40px;
+}
+
+.about-number {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.about-desc {
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}

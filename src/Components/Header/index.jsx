@@ -20,7 +20,9 @@ export function Header() {
         <a href='#' className="header-auth-reg">
           Рэгiстрацыя
         </a>
-        <Button />
+        <Button>
+          Хачу яшчэ навiн
+        </Button>
       </div>
     </div>
   )

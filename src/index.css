@@ -6,9 +6,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../public/fonts/Quicksand/Quicksand-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../public/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
 }
