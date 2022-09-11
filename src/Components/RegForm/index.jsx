@@ -26,12 +26,7 @@ export function RegForm() {
     validateOnChange: false,
     onSubmit: (values) => {
       if (active === 'reg') {
-        axios.post('/wp-json/mr/v1/registration', values, {
-          headers: {
-            'Content-Type': 'application/json',
-            'Cookie': '__ddg1_=jtOK8XMjKej2qgMs0r5W',
-          }
-        })
+        axios.post('/wp-json/mr/v1/registration', values)
         .then(({ data }) => {
           console.log(data);
           localStorage.setItem('userId', JSON.stringify(data.token));
