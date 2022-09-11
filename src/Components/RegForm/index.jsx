@@ -2,10 +2,12 @@ import { useFormik } from "formik";
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { object, string } from "yup";
+import { useNavigate } from 'react-router';
 import './RegForm.css';
 
 export function RegForm() {
   const [active, setActive] = useState('reg');
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -23,6 +25,7 @@ export function RegForm() {
     validateOnChange: false,
     onSubmit: (values) => {
       console.log(values);
+      navigate('/profilefill');
     }
   })
   const optionClick = (e) => {

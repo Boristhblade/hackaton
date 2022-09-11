@@ -1,0 +1,58 @@
+.profilefill {
+  margin: 40px 5%;
+}
+
+.profile-header {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  font-size: 14px;
+  line-height: 16.94px;
+}
+
+.profile-form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-form-item :nth-child(2) {
+  width: 260px;
+}
+
+.profile-upload-pic {
+  width: 250px;
+  aspect-ratio: 1;
+  background: #BDBDBD;
+  border-radius: 6px;
+}
+
+.profile-fill-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.profile-options {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40px;
+
+}
+
+.profile-options a {
+  text-decoration: none;
+  color: #333333;
+}
