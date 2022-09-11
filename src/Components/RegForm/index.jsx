@@ -17,7 +17,7 @@ export function RegForm() {
     },
     validationSchema: object().shape({
       email: string()
-        .required()
+        .required('Пазначце правільны email')
         .email('Пазначце правільны email'),
       password: string()
         .required('Гэта абавязковае поле'),
@@ -25,15 +25,31 @@ export function RegForm() {
     validateOnBlur: false,
     validateOnChange: false,
     onSubmit: (values) => {
-      axios.post('/wp-json/jwt-auth/v1/token', values)
+      if (active === 'reg') {
+        axios.post('/wp-json/mr/v1/registration', values, {
+          headers: {
+            'Content-Type': 'application/json',
+            'Cookie': '__ddg1_=jtOK8XMjKej2qgMs0r5W',
+          }
+        })
         .then(({ data }) => {
           console.log(data);
           localStorage.setItem('userId', JSON.stringify(data.token));
           localStorage.setItem('userName', JSON.stringify(data.user_nicename));
           localStorage.setItem('userEmail', JSON.stringify(data.user_email));
-        })
+          navigate('/profilefill');
+        });
+      } else {
+        axios.post('/wp-json/jwt-auth/v1/token', values)
+        .then(({ data }) => {
+          console.log(data);
+          localStorage.setItem('userId', JSON.stringify(data.token));
+          localStorage.setItem('userName', JSON.stringify(data.user_nicename));
+          localStorage.setItem('userEmail', JSON.stringify(data.user_email));
+          navigate('/profilefill');
+        });
+      }
       console.log(values);
-      navigate('/profilefill');
     }
   })
   const optionClick = (e) => {
@@ -43,11 +59,11 @@ export function RegForm() {
     <div className="regform">
       <div className="regform-container">
         <div className="regform-choose">
-          <p className={`regform-option ${active === 'reg' ? 'option-active' : ''}`} id="reg" onClick={optionClick}>Регистрация</p>
-          <p className={`regform-option ${active === 'login' ? 'option-active' : ''}`} id='login' onClick={optionClick}>Вход</p>
+          <p className={`regform-option ${active === 'reg' ? 'option-active' : ''}`} id="reg" onClick={optionClick}>Рэгістрацыя</p>
+          <p className={`regform-option ${active === 'login' ? 'option-active' : ''}`} id='login' onClick={optionClick}>Уваход</p>
         </div>
         <Form noValidate onSubmit={formik.handleSubmit}>
-          <h2 className="regform-header">{active === 'reg' ? 'Стварыть акаунт' : 'Войти'}</h2>
+          <h2 className="regform-header">{active === 'reg' ? 'Стварыть акаунт' : 'Увайсці ў акаунт'}</h2>
           <Form.Group className='regform-input' controlId="email">
             <Form.Label className="form-label">
               Увядзіце адрас электроннай пошты

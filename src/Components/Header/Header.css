@@ -42,3 +42,8 @@
   text-decoration: none;
   color: black;
 }
+
+.avatar-small {
+  height: 35px;
+  aspect-ratio: 1;
+}
