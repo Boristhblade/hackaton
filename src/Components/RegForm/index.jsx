@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { object, string } from "yup";
 import { useNavigate } from 'react-router';
+import axios from "axios";
 import './RegForm.css';
 
 export function RegForm() {
@@ -24,6 +25,13 @@ export function RegForm() {
     validateOnBlur: false,
     validateOnChange: false,
     onSubmit: (values) => {
+      axios.post('/wp-json/jwt-auth/v1/token', values)
+        .then(({ data }) => {
+          console.log(data);
+          localStorage.setItem('userId', JSON.stringify(data.token));
+          localStorage.setItem('userName', JSON.stringify(data.user_nicename));
+          localStorage.setItem('userEmail', JSON.stringify(data.user_email));
+        })
       console.log(values);
       navigate('/profilefill');
     }
