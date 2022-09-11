@@ -6,7 +6,7 @@ import { useFormik } from 'formik';
 export function Footer() {
   const formik = useFormik({
     initialValues: {
-      email: '',
+      emailsubscribe: '',
     },
     onSubmit: (values) => {
       console.log(values);
@@ -14,10 +14,10 @@ export function Footer() {
   })
   return (
     <div className='footer'>
-      <Form className='footer-form'>
+      <Form className='footer-form' onSubmit={formik.handleSubmit}>
         <h3 className='footer-header'>Падпішыцеся на нашы навіны</h3>
         <div className='footer-form-container'>
-          <Form.Group className="form-floating" controlId="email">
+          <Form.Group className="form-floating" controlId="emailsubscribe">
             <Form.Control
               className='footer-form-input'
               placeholder='Увядзіце ваш еmail'

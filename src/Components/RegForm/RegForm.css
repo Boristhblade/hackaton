@@ -13,8 +13,35 @@
 
 .regform-submit {
   width: 100%;
+  margin: 40px auto 20px auto;
 }
 
 .regform-input {
   margin-bottom: 20px;
+}
+
+.regform-choose {
+  display: flex;
+  gap: 20px;
+}
+
+.regform-option {
+  transition: all 0.5s ease-in-out;
+}
+
+.option-active {
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid #EB5757;
+}
+
+.regform-bottomtext {
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #BDBDBD;
+}
+
+.regform-checkbox {
+  font-size: 11px;
+  line-height: 12px;
 }

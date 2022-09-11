@@ -1,14 +1,16 @@
 import { useFormik } from "formik";
-import React from "react";
+import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { object, string } from "yup";
 import './RegForm.css';
 
 export function RegForm() {
+  const [active, setActive] = useState('reg');
   const formik = useFormik({
     initialValues: {
       email: '',
       password: '',
+      check: false,
     },
     validationSchema: object().shape({
       email: string()
@@ -19,13 +21,23 @@ export function RegForm() {
     }),
     validateOnBlur: false,
     validateOnChange: false,
+    onSubmit: (values) => {
+      console.log(values);
+    }
   })
+  const optionClick = (e) => {
+    setActive(e.target.id);
+  }
   return (
     <div className="regform">
       <div className="regform-container">
-        <Form>
-          <h2 className="regform-header">Стварыть акаунт</h2>
-          <Form.Group className='regform-input'>
+        <div className="regform-choose">
+          <p className={`regform-option ${active === 'reg' ? 'option-active' : ''}`} id="reg" onClick={optionClick}>Регистрация</p>
+          <p className={`regform-option ${active === 'login' ? 'option-active' : ''}`} id='login' onClick={optionClick}>Вход</p>
+        </div>
+        <Form noValidate onSubmit={formik.handleSubmit}>
+          <h2 className="regform-header">{active === 'reg' ? 'Стварыть акаунт' : 'Войти'}</h2>
+          <Form.Group className='regform-input' controlId="email">
             <Form.Label className="form-label">
               Увядзіце адрас электроннай пошты
             </Form.Label>
@@ -40,7 +52,7 @@ export function RegForm() {
               {formik.errors.email}
             </Form.Control.Feedback>
           </Form.Group>
-          <Form.Group className='regform-input'>
+          <Form.Group className='regform-input' controlId="password">
             <Form.Label className="form-label">
               Пароль
             </Form.Label>
@@ -55,10 +67,20 @@ export function RegForm() {
               {formik.errors.password}
             </Form.Control.Feedback>
           </Form.Group>
-          <Button variant="dark" className="regform-submit">
+          <Button variant="dark" className="regform-submit" type="submit">
             Зарэгістравацца
           </Button>
+          <Form.Group className="" controlId="check">
+            <Form.Check
+              type="checkbox"
+              label="Пацвярджаю, што азнаёмлены, цалкам згодзен і прымаю ўмовы"
+              value={formik.values.check}
+              onChange={formik.handleChange}
+              className='regform-checkbox'
+            />
+          </Form.Group>
         </Form>
+        <p className="regform-bottomtext">або увайсці праз</p>
       </div>
     </div>
   )
