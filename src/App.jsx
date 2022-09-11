@@ -8,6 +8,7 @@ import { Main } from './Pages/Main';
 import { Registration } from './Pages/Registration';
 import { Fillprofile } from './Pages/Fillprofile';
 import { Profile } from './Pages/Profile';
+import { Course } from './Pages/Course';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path='/registration' element={<Registration />} />
         <Route exact path='/profilefill' element={<Fillprofile />} />
         <Route exact path='/profile' element={<Profile />} />
+        <Route exact path='/course' element={<Course />} />
       </Routes>
     </Router>
   );

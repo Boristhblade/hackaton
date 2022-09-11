@@ -1,0 +1,24 @@
+.coursedesc {
+  padding: 100px 200px;
+  height: 500px;
+}
+
+.coursedesc-container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.coursedesc-text {
+  font-size: 18px;
+  line-height: 130%;
+  color: #282828;
+}
+
+.coursedesc-header {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  color: #282828;
+  margin-bottom: 45px;
+}

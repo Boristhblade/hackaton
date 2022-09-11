@@ -1,0 +1,14 @@
+.coursebenefits-container {
+  padding: 20px 200px;
+  display: grid;
+  grid-template-columns: 370px 370px 370px;
+  gap: 40px;
+}
+
+.coursebenefits-card {
+  border: 1px solid #333333;
+  box-shadow: 15px 15px #EB5757;
+  border-radius: 4px;
+  min-height: 270px;
+  padding: 20px;
+}
