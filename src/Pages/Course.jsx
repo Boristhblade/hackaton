@@ -6,6 +6,7 @@ import { CourseHeader } from "../Components/CourseHeader";
 import { CourseDesc } from "../Components/CourseDesc";
 import { CourseBenefits } from "../Components/CourseBenefits";
 import { CourseSchedule } from "../Components/CourseSchedule";
+import { CourseAuthors } from "../Components/CourseAuthors";
 
 export function Course() {
   return (
@@ -15,6 +16,7 @@ export function Course() {
       <CourseDesc />
       <CourseBenefits />
       <CourseSchedule />
+      <CourseAuthors />
       <Footer />
     </>
   )

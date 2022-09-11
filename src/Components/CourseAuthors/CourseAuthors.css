@@ -1,0 +1,19 @@
+.courseauthors {
+
+}
+
+.courseauthors-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.courseauthors-header {
+
+}
+
+.courseauthors-photo {
+  width: 300px;
+  aspect-ratio: 1;
+}
+
