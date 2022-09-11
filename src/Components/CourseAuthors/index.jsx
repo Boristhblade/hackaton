@@ -13,9 +13,9 @@ export function CourseAuthors() {
     <div className='courseauthors'>
       <h3 className='courseauthors-header'>Каманда курса</h3>
       <div className='courseauthors-container'>
-        {data.map(([name, role]) => {
+        {data.map(([name, role], index) => {
           return (
-            <div>
+            <div key={index}>
               <img className='courseauthors-photo' alt='photo'/>
               <h4>{name}</h4>
               <p>{role}</p>

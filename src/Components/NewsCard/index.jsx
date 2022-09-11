@@ -3,7 +3,7 @@ import React from 'react';
 
 export function NewsCard() {
   return (
-    <div className='newscard'>
+    <div className='newscard' id='news'>
       <img src='./img/Rectangle 71.png' className='newscard-image' alt='newscard' />
       <div className='newscard-description'>
         Дызайн

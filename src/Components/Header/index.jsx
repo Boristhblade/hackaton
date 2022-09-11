@@ -1,20 +1,25 @@
 import { Button } from '../Button';
 import './Header.css';
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router';
 
 export function Header() {
   const isAuth = localStorage.getItem('userId');
+  const navigate = useNavigate();
   const exitAcc = () => {
     localStorage.clear();
   }
+  const click = () => {
+    navigate('/');
+  }
   return (
     <div className="header">
-      <div className="header-logo">
+      <div className="header-logo" onClick={click}>
         MARAMORA.
       </div>
       <nav className="header-links">
-        <a href="#">Навiны</a>
-        <a href="#">Курсы</a>
+        <a href="#news">Навiны</a>
+        <a href="/course">Курсы</a>
         <a href="#">Best practices</a>
         <a href="#">Суполкi</a>
       </nav>

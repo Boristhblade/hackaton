@@ -17,7 +17,7 @@ export function CourseSchedule() {
       </h3>
       <div className='schedule-container'>
         {data.map(([head, date, desc], index) => (
-          <div className='schedule-card'>
+          <div className='schedule-card' key={index}>
             <p className='schedule-index'>{`Вебінар ${index + 1}`}</p>
             <h4 className='schedule-head'>{head}</h4>
             <p>{date}</p>

@@ -12,8 +12,8 @@ export function CourseBenefits() {
   ]
   return (
     <div className='coursebenefits-container'>
-      {data.map(([head, content]) => (
-        <div className='coursebenefits-card'>
+      {data.map(([head, content], index) => (
+        <div className='coursebenefits-card' key={index}>
           <h4>{head}</h4>
           <p>{content}</p>
         </div>
