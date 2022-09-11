@@ -18,7 +18,7 @@ export function Header() {
         <a href="#">
           <img src="./img/search.png" alt="search" />
         </a>
-        <a href='#' className="header-auth-reg">
+        <a href='/registration' className="header-auth-reg">
           Рэгiстрацыя
         </a>
         <Button>

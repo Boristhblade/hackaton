@@ -1,0 +1,20 @@
+.regform {
+
+}
+
+.regform-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px 50px;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  box-shadow: 10px 10px #EB5757;
+}
+
+.regform-submit {
+  width: 100%;
+}
+
+.regform-input {
+  margin-bottom: 20px;
+}
