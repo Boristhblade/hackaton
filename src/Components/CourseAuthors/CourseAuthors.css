@@ -1,19 +1,21 @@
 .courseauthors {
-
+  padding: 100px 200px;
 }
 
 .courseauthors-container {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .courseauthors-header {
-
+  margin-bottom: 5px;
 }
 
 .courseauthors-photo {
   width: 300px;
   aspect-ratio: 1;
+  background-color: bisque;
 }
 
